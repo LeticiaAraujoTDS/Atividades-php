@@ -1,9 +1,85 @@
-<?php
+Atividade 1 :
 
+<?php
     $numeros = array(1, 22, 333);
 
     for($i = 0; $i < 3; $i++){
 
         print $numeros[$i] . "-";
-        
     }
+
+terminal:
+lab@lab:~/leticia_1tds$ php atividade.php
+
+Memrória:
+0 1 2
+
+Console:
+1-22-333-lab@lab:~/leticia_1tds$ 
+
+Atividade 2:
+<?php
+   $sete_maravilhas = array(
+        "Cristo Redentor",
+        "Chichén Itzá",
+        "Coliseu",
+        "Muralha da China",
+        "Petra",
+        "Machu Picchu",
+        "Taj Mahal"
+    );
+
+    for($i=0; $i < 7; $i++){
+
+        print($i+1) . ": " . $sete_maravilhas[$i] . "\n";
+
+        }
+
+terminal:
+lab@lab:~/leticia_1tds$ php atividade.php
+
+Memória:
+0 1 2 3 4 5 6 
+
+Console:
+1: Cristo Redentor
+2: Chichén Itzá
+3: Coliseu
+4: Muralha da China
+5: Petra
+6: Machu Picchu
+7: Taj Mahal
+lab@lab:~/leticia_1tds$ 
+
+Atividade 3:
+<?php
+    $sete_maravilhas = array(
+        "Cristo Redentor",
+        "Chichén Itzá",
+        "Coliseu",
+        "Muralha da China",
+        "Petra",
+        "Machu Picchu",
+        "Taj Mahal"
+);
+    $valor_buscado = "Coliseu";
+
+    for($i = 0; $i < 7; $i++){
+
+        if ($sete_maravilhas[$i] == $valor_buscado) {
+            print("o valor buscado está entre as maravilhas");
+            break;
+            }
+        }
+
+terminal
+lab@lab:~/leticia_1tds$ php atividade.php
+
+Memória:
+0 1 2
+
+Console:
+o valor buscado está entre as maravilhaslab@lab:~/leticia_1tds$ 
+
+Atividade 4:
+
