@@ -49,7 +49,7 @@ Console:
 5: Petra
 6: Machu Picchu
 7: Taj Mahal
-lab@lab:~/leticia_1tds$ 
+
 
 Atividade 3:
 <?php
@@ -79,7 +79,36 @@ Memória:
 0 1 2
 
 Console:
-o valor buscado está entre as maravilhaslab@lab:~/leticia_1tds$ 
+o valor buscado está entre as maravilhas
 
 Atividade 4:
 
+<?php
+
+    $mega_sena = [33, 4, 47, 7, 11, 25];
+    $aux = 0;
+
+    for($i = 0; $i < 6; $i++){
+
+        for($j = 0; $j < 5; $j++){
+
+            if($mega_sena[$j] > $mega_sena[$j + 1]){
+
+                $aux = $mega_sena[$j];
+                $mega_sena[$j] = $mega_sena[$j + 1];
+                $mega_sena[$j + 1] = $aux;
+            }
+        }
+    }
+    for($i = 0; $i < 6; $i++){
+      print $mega_sena[$i] . " - ";
+    }
+
+terminal
+lab@lab:~/leticia_1tds$ php atividade.php
+
+Memória:
+0 1 2 3 4 5 
+
+Console:
+4 - 7 - 11 - 25 - 33 - 47 - 
