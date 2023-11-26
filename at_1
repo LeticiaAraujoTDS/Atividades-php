@@ -8,16 +8,15 @@ Atividade 1 :
         print $numeros[$i] . "-";
     }
 
-terminal:
-lab@lab:~/leticia_1tds$ php atividade.php
-
 Memrória:
 0 1 2
 
 Console:
 1-22-333-lab@lab:~/leticia_1tds$ 
 
+
 Atividade 2:
+
 <?php
    $sete_maravilhas = array(
         "Cristo Redentor",
@@ -35,9 +34,6 @@ Atividade 2:
 
         }
 
-terminal:
-lab@lab:~/leticia_1tds$ php atividade.php
-
 Memória:
 0 1 2 3 4 5 6 
 
@@ -52,6 +48,7 @@ Console:
 
 
 Atividade 3:
+
 <?php
     $sete_maravilhas = array(
         "Cristo Redentor",
@@ -72,14 +69,12 @@ Atividade 3:
             }
         }
 
-terminal
-lab@lab:~/leticia_1tds$ php atividade.php
-
 Memória:
 0 1 2
 
 Console:
 o valor buscado está entre as maravilhas
+
 
 Atividade 4:
 
@@ -104,11 +99,27 @@ Atividade 4:
       print $mega_sena[$i] . " - ";
     }
 
-terminal
-lab@lab:~/leticia_1tds$ php atividade.php
 
 Memória:
 0 1 2 3 4 5 
 
 Console:
 4 - 7 - 11 - 25 - 33 - 47 - 
+
+Atividade 5:
+
+<?php
+    $matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+for($c =0; $c < 3; $c++){
+    for($l = 0; $l < 3; $l++){
+        prit_r($matriz[$c][$l]);
+    }
+    print "\n";
+}
+
+
