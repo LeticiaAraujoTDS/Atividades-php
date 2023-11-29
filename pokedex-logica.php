@@ -11,8 +11,9 @@
   $options = getopt($short, $long);
 
   $nome = $options['pokemon'];
+//se clicar em ctrl e na barra do ?, tudo que vc selecionou fica como comentario 
 
-  $dados_em_texto = file_get_contents("https://pokeapi.co/api/v2/pokemon/{$nome}");
+   $dados_em_texto = file_get_contents("https://pokeapi.co/api/v2/pokemon/{$nome}");
 
    $pokemon = json_decode($dados_em_texto, true);
 
